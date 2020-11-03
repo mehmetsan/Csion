@@ -1,0 +1,5 @@
+node_modules
+ldamodel/
+.env
+__pycache__/
+.local/

@@ -1,0 +1,596 @@
+#logo {
+  width: 12%;
+  height: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+body {
+  background-color: #539093;
+  text-align: center !important;
+  margin-bottom: 100px;
+  padding: 20px;
+}
+
+button {
+  background-color: #ffffff;
+  border-radius: 35px;
+  border: none;
+  color: #539093;
+  padding: 14px 85px;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  outline: none;
+  font-family: "Montserrat";
+}
+#responseForm{
+  color: white;
+    font-family: "Montserrat";
+}
+#verificationWarn{
+  font-family: "Montserrat";
+  color:green;
+  font-weight:500;
+}
+/*ENTRANCE AT INDEX.HTML*/
+#entranceLine {
+  margin-top: 27%;
+  background-color: #70ACAF;
+  border: none;
+  height: 1px;
+  width: 90%;
+}
+
+#rights {
+  font-family: "Montserrat";
+  color: #9ACBCD;
+  font-size: 10px;
+}
+
+#signup {
+  background-color: #64adb1 !important;
+  color: #ffffff !important;
+  padding: 14px 80px !important;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.unfade {
+  opacity: 1;
+}
+
+.circle {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 125px;
+  left: 125px;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease-in-out;
+  background-color: white;
+  border-radius: 100%;
+  overflow: hidden;
+  z-index: auto;
+}
+
+.open {
+  top: 0px;
+  left: 0px;
+  width: 250px;
+  height: 255px;
+}
+
+.indexForm {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.indexForm input {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  color: grey;
+  background-color: rgb(245, 243, 243);
+  padding: 12px 50px 12px;
+  background-position: 10px;
+  background-repeat: no-repeat;
+  width: 200px;
+}
+input:focus {
+  outline: none;
+}
+.uname {
+  background-image: url("https://cdn.glitch.com/cfdc9ac4-68e0-4e27-9739-934c85a87cdf%2Fuser.png?v=1589811892793");
+}
+.password {
+  background-image: url("https://cdn.glitch.com/cfdc9ac4-68e0-4e27-9739-934c85a87cdf%2Flock.png?v=1589811892922");
+}
+.email {
+  background-image: url("https://cdn.glitch.com/cfdc9ac4-68e0-4e27-9739-934c85a87cdf%2Fmail.png?v=1589811892961");
+}
+
+.formButton {
+  background-color: #64adb1 !important;
+  color: #ffffff !important;
+  padding: 14px 45px !important;
+}
+
+.text {
+  font-family: "Montserrat";
+  font-size: 10px;
+  color: #969696;
+}
+#tc{
+  margin:0;
+  width: auto;
+}
+
+#tclabel{
+  
+      font-family: "Montserrat";
+color: grey;
+  font-size: 12px;
+}
+a {
+  font-family: "Montserrat";
+  text-decoration: none;
+  color: #7D9BE8;
+  font-size: 10px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+/* NAVBAR */
+.navbar {
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  border-top: #8b8b8b;
+  border-style: outset;
+  border-width: 1px;
+}
+
+.navbar a {
+  color: #919191;
+  text-align: center;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-left: 7%;
+  padding-right: 7%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #84c1c4;
+  color: rgb(255, 255, 255);
+}
+
+#backSign {
+  display:none;
+}
+/*HOME*/
+
+.subcategoryButton {
+  width: 15%;
+  padding: 15px;
+}
+
+.categoryButton {
+  width: 15%;
+  padding: 15px;
+}
+
+.subCategories {
+  display: none;
+}
+
+.problemButton {
+  font-size: 15px;
+}
+
+.backButton {
+  background-color: #64adb1;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: none;
+}
+
+#problems {
+  display: none;
+}
+
+.question {
+  background-color: #ffffff;
+  border-radius: 35px;
+  border: none;
+  color: #223e3f;
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: 13px;
+  font-family: "Montserrat";
+  padding: 10px;
+}
+
+.qInput {
+  background-color: #64adb1;
+  border-radius: 35px;
+  border: none;
+  color: #ffffff;
+  padding: 14px;
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: 13px;
+  outline: none;
+  font-family: "Montserrat";
+}
+
+#questions {
+  display: none;
+}
+
+#decision {
+  display: none;
+}
+
+#decision p {
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: white;
+}
+
+#questionHeader {
+  display: none;
+}
+
+.decisiondiv {
+  background-color: #64adb1;
+  border-radius: 35px;
+  border: none;
+  color: #ffffff;
+  padding: 10px;
+  width: 90%;
+  display: inline-block;
+}
+
+b {
+  font-family: "Montserrat";
+}
+
+#submitQuestions {
+  margin-top: 20px;
+}
+
+/* SETTINGS */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#notifCheck div {
+  display: inline-block;
+  width: 200px;
+}
+
+.settingsDiv {
+  background-color: #64adb1;
+  width: 30%;
+  height: auto;
+  border-radius: 35px;
+  border: none;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Montserrat";
+  font-size: 24px;
+}
+
+.settingForm label {
+  font-size: 16px;
+}
+.settingForm input {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  color: grey;
+  background-color: rgb(245, 243, 243);
+  padding: 12px 50px 12px;
+  background-position: 10px;
+  background-repeat: no-repeat;
+}
+
+.passSubmit {
+  margin-bottom: 15px;
+}
+
+#about {
+  padding: 10px;
+  display: none;
+}
+
+#about a {
+  font-size: 16px;
+  color: white;
+  font-family: "Montserrat";
+}
+
+#termsCons {
+  padding: 10px;
+  display: none;
+  font-size: 14px;
+}
+
+#termsCons a{
+  color: white;
+}
+
+#terms {
+  padding: 16px 35px;
+}
+
+/* PROFILE */
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: age;
+}
+.item5 {
+  grid-area: footer;
+}
+.item6 {
+  grid-area: hicon;
+}
+.item7 {
+  grid-area: micon;
+}
+.item8 {
+  grid-area: aicon;
+}
+.item9 {
+  grid-area: ficon;
+}
+.item0 {
+  grid-area: about;
+  font-size: 25px !important;
+  text-align: center !important;
+}
+.item10 {
+  grid-area: hr;
+  margin: 0;
+}
+
+.grid-container {
+  background-color: #64adb1;
+  height: auto;
+  border-radius: 35px;
+  border: none;
+  color: #ffffff;
+  display: grid;
+  font-family: "Montserrat";
+  grid-template-areas:
+    "about about about about about menu"
+    "hr hr hr hr hr hr"
+    "hicon header header header header header"
+    "micon main main main main main"
+    "ficon footer footer footer footer footer"
+    "aicon age age age age age";
+  grid-gap: 0px;
+  padding: 20px;
+}
+
+.grid-container > div {
+  background-color: #64adb1;
+  text-align: left;
+  font-size: 22px;
+  padding: 10px 0px;
+}
+
+.profileCard {
+  display: inline-block;
+  width: 30%;
+}
+
+#edit:hover {
+  cursor: pointer;
+  color: #539093;
+}
+
+#edit {
+  font-size: 20px;
+  float: right;
+  float: top;
+}
+
+#editForm {
+  display: none;
+  background-color: #64adb1;
+  padding-top: 20px;
+  height: auto;
+  border-radius: 35px;
+  border: none;
+}
+
+#editForm input {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  color: grey;
+  background-color: rgb(255, 255, 255);
+  padding: 12px 50px 12px;
+  background-position: 10px;
+  background-repeat: no-repeat;
+  width: 200px;
+}
+
+#editbutton {
+  background-color: white !important;
+  color: #64adb1 !important;
+  font-size: 16px;
+  padding: 10px 15px !important;
+}
+.ageInput {
+  background-image: url("https://cdn.glitch.com/cfdc9ac4-68e0-4e27-9739-934c85a87cdf%2Fage.png?v=1589811892813");
+}
+.unameInput {
+  background-image: url("https://cdn.glitch.com/cfdc9ac4-68e0-4e27-9739-934c85a87cdf%2Fsign.png?v=1589811892483");
+}
+
+.profileCard p {
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: white;
+}
+
+.pcard {
+  padding: 20px 0px;
+}
+
+.decision p {
+  font-size: 16px;
+}
+
+.feedback {
+  padding: 5px 10px !important;
+  font-size: 16px;
+}
+
+.settingsDiv hr {
+  margin: 10px 18px !important;
+}
+
+.detail {
+  width: 300px;
+  height: 100px;
+}
+
+.feedbackSubmit {
+  padding: 5px 10px !important;
+  font-size: 16px;
+}
+
+.feedbackForm label {
+  font-size: 16px;
+}
+
+.feedbackForm {
+  display: none;
+}
+
+#personalityDets p {
+  font-size: 16px;
+  margin: 8px 0px;
+}
+#personalityExp b {
+  font-size: 16px;
+}
+#profilePage hr {
+  margin: 0%;
+}
+.dButton {
+  color: white; 
+  font-size: 14px;
+}
+
+#hideDets {
+  display: none;
+}
+#personalityDets{
+  display: none;
+}
+
+.decision b {
+    font-size: 16px;
+}
+.feedbackForm p {
+      font-size: 14px;
+
+}
+/* PAGES*/
+
+#testPage {
+  display: none;
+}
+
+#homePage {
+  display: none;
+}
+
+#profilePage {
+  display: none;
+}
+
+#settingsPage {
+  display: none;
+}
+
+#nlpPage {
+  display: none;
+}
+
+#problemDescription {
+  margin-bottom: 20px;
+  color: grey;
+  border-radius: 32px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  
+}
+
+#problemDescription::-webkit-scrollbar {
+   display: none;
+ }
+
+.he {
+  font-family: 'Montserrat'; 
+  color:white;
+}
+
+#nlpPage p{
+  font-family: 'Montserrat'; 
+  font-size: 14px;
+  color: white;
+}
+
+#settingsPage input[type="password"] {
+  background-image: url("https://cdn.glitch.com/cfdc9ac4-68e0-4e27-9739-934c85a87cdf%2Flock.png?v=1589811892922");
+  font-family: "Montserrat";
+  font-size: 14px;
+}
